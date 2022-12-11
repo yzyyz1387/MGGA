@@ -1,3 +1,12 @@
+/* ==UserStyle==
+Rewritten_script_code
+@name 女生自用Github 美化
+@description 美化github
+@match        https://github.com/*
+@version 1.5
+@namespace https://greasyfork.org/users/749632
+==/UserStyle== */
+
 /*
 // 2022/12/11
 // style_p.css
@@ -20,26 +29,30 @@ body{
     background: #fff;
     border: none;
 }
-.header-search-wrapper::placeholder{
+input.form-control.js-site-search-focus.header-search-input.jump-to-field.js-jump-to-field::placeholder {
     color: #888;
 }
 
-.mail-status{
+.notification-indicator .mail-status{
     border: none;
     background-image: linear-gradient(90deg, #ef2f6a, #ca003e);
     box-shadow: 0 0 0 4px #888;
     width: 10px;
     height: 10px;
-}
-.avatar{
     transition: all 0.3s ease;
 }
-.avatar :hover{
-
-    transform: rotate(20deg) scale(1.2);
+span.mail-status.unread:hover {
+    box-shadow: 0 0 0 4px #ebeaea;
 }
 
-.Box{
+img.avatar{
+    transition: all 0.3s ease;
+}
+img.avatar:hover{
+    transform: rotate(20deg) scale(1.2) !important;
+}
+
+.Box.p-3.mt-2{
     border-style: none;
     background: #f6f8fa;
     box-shadow:  20px 20px 60px #d1d3d5,
@@ -50,10 +63,22 @@ body{
     box-shadow:  20px 20px 60px #abb1b1,
     -20px -20px 60px #ffffff;
 }
-.btn-top{
+
+
+
+button.btn-top{
     transition: all 0.3s ease;
 
 }
-.btn-top:hover{
-    transform: scale(1.2);
+button.btn-top:hover{
+    transform: scale(1.2) !important;
+}
+
+.btn-primary{
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 20px #bdd7c4
+}
+.btn-primary:hover{
+    box-shadow: 1px 1px 20px #2da44e
 }
