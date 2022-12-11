@@ -82,3 +82,7 @@ button.btn-top:hover{
 .btn-primary:hover{
     box-shadow: 1px 1px 20px #2da44e
 }
+
+.blob-code-inner {
+    font-family: 'jb', ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+}
