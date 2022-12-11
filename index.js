@@ -5,7 +5,7 @@
     // @description  自定义 GitHub css样式
     // @author       github@yzyyz1387
     // @match        https://github.com/*
-    // @resource     data https://cdn.staticaly.com/gh/yzyyz1387/MGGA/master/style_p.css
+    // @resource     data https://cdn.staticaly.com/gh/yzyyz1387/MGGA/master/style_p.css?dev=1
     // @grant        GM_addStyle
     // @grant        GM_getResourceText
     // @grant unsafeWindow
