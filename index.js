@@ -27,7 +27,6 @@
             styleNode.appendChild(document.createTextNode(css));
             (document.querySelector("head") || document.documentElement).appendChild(styleNode);
         }
-        hljs.highlightAll();
     })();
 
 
