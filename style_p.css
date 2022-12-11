@@ -56,12 +56,12 @@ img.avatar:hover{
     border-style: none;
     background: #f6f8fa;
     box-shadow:  20px 20px 60px #d1d3d5,
-    -20px -20px 60px #ffffff;
+    -20px -20px 60px #ffffff00;
     transition: all 0.3s ease;
 }
 .Box.p-3.mt-2:hover{
     box-shadow:  20px 20px 60px #abb1b1,
-    -20px -20px 60px #ffffff;
+    -20px -20px 60px #ffffff00;
 }
 
 
