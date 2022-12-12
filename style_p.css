@@ -83,4 +83,7 @@ Rewritten_script_code
     .blob-code-inner {
         font-family: 'jb', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
     }
+    .header-search-wrapper {
+        color: #888;
+    }
 }
