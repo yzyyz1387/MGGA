@@ -2,7 +2,7 @@
 Rewritten_script_code
 @name 女生自用Github 美化
 @description 美化github
-@version 2.3.3
+@version 2.3.4
 @license AGPL-3.0
 @author 幼稚园园长
 @namespace https://greasyfork.org/users/959347
@@ -19,10 +19,15 @@ Rewritten_script_code
         font-family: 'jb', -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
     }
-    .Header {
-        box-shadow: 0 7px 11px #888;
-        background: linear-gradient(90deg, #076ad1, #3898fc)
+
+    .AppHeader{
+        --AppHeader-bg:#3898fc;
+        color:#fff
     }
+
+    .AppHeader .AppHeader-globalBar .AppHeader-search .AppHeader-search-visual--leading,.color-fg-subtle,trailing {
+        color:#fff}
+
     .header-search-wrapper {
         background: #fff;
         border: none;
@@ -50,7 +55,7 @@ Rewritten_script_code
         transform: rotate(20deg) scale(1.2) !important;
     }
 
-    .   .Box.p-3 {
+    .Box.p-3 {
         border-style: none;
         background: #f6f8fa;
         box-shadow: 20px 20px 60px #d1d3d5,
@@ -67,6 +72,9 @@ Rewritten_script_code
         box-shadow: 20px 20px 60px #d1d3d5,
         -20px -20px 60px #ffffff00;
         transition: all 0.3s ease;
+    }
+    .rounded-2.py-1:hover .flex-justify-between.p-3{
+        background: #fff !important;
     }
     .feed-item-content{
         background-color:unset;
