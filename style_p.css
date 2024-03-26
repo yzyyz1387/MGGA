@@ -1,20 +1,28 @@
-/* ==UserStyle==
-Rewritten_script_code
-@name 女生自用Github 美化
-@description 美化github
-@version 2.3.1
-@license AGPL-3.0
-@author 幼稚园园长
-@namespace https://greasyfork.org/users/959347
-==/UserStyle== */
+// ==UserScript==
+// @name 女生自用Github 美化
+// @description 美化github
+// @version 2.3.1
+// @license AGPL-3.0
+// @author 幼稚园园长
+// @namespace https://greasyfork.org/users/959347
+// @grant GM_addStyle
+// @run-at document-start
+// @include /^(?:https?://github\.com/.*)$/
+// ==/UserScript==
 
-
-@-moz-document regexp("https?://github\\.com/.*")
-{
+(function() {
+let css = `
     @font-face {
         font-family: 'jb';
-        src: url('https://cdn.staticaly.com/gh/yzyyz1387/blogimages/master/JBMr.woff');
+        src: url('https://cdn.statically.io/gh/yzyyz1387/blogimages/master/JBMr.woff');
     }
+.AppHeader{
+--AppHeader-bg:#3898fc;
+color:#fff
+}
+
+.AppHeader .AppHeader-globalBar .AppHeader-search .AppHeader-search-visual--leading,.color-fg-subtle,trailing {
+#color:#fff}
     body {
         font-family: 'jb', -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
@@ -50,13 +58,28 @@ Rewritten_script_code
         transform: rotate(20deg) scale(1.2) !important;
     }
 
-    .Box.p-3.mt-2 {
+    .Box.p-3 {
         border-style: none;
         background: #f6f8fa;
         box-shadow: 20px 20px 60px #d1d3d5,
         -20px -20px 60px #ffffff00;
         transition: all 0.3s ease;
     }
+.Box.p-3:hover {
+        box-shadow: 20px 20px 60px #abb1b1,
+        -20px -20px 60px #ffffff00;
+    }
+.rounded-2.py-1:hover {
+        border-style: none;
+        background: #f6f8fa;
+        box-shadow: 20px 20px 60px #d1d3d5,
+        -20px -20px 60px #ffffff00;
+        transition: all 0.3s ease;
+    }
+.feed-item-content{
+        background-color:unset;
+        border:unset !important;
+}
     .Box.p-3.mt-2:hover {
         box-shadow: 20px 20px 60px #abb1b1,
         -20px -20px 60px #ffffff00;
@@ -86,4 +109,12 @@ Rewritten_script_code
     .header-search-wrapper {
         color: #888;
     }
+`;
+if (typeof GM_addStyle !== "undefined") {
+  GM_addStyle(css);
+} else {
+  let styleNode = document.createElement("style");
+  styleNode.appendChild(document.createTextNode(css));
+  (document.querySelector("head") || document.documentElement).appendChild(styleNode);
 }
+})();
