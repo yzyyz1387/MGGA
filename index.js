@@ -1,11 +1,11 @@
     // ==UserScript==
     // @name         GitHub personal style
     // @namespace    http://tampermonkey.net/
-    // @version      0.1
+    // @version      0.2
     // @description  自定义 GitHub css样式
     // @author       幼稚园园长 github@yzyyz1387
     // @match        https://github.com/*
-    // @resource     data https://cdn.staticaly.com/gh/yzyyz1387/MGGA/master/style_p.css?dev=1
+    // @resource     data https://cdn.statically.io/gh/yzyyz1387/MGGA/master/style_p.css?dev=1
     // @grant        GM_addStyle
     // @grant        GM_getResourceText
     // @grant unsafeWindow
