@@ -2,7 +2,7 @@
 Rewritten_script_code
 @name 女生自用Github 美化
 @description 美化github
-@version 2.3.6
+@version 2.3.6.1
 @license AGPL-3.0
 @author 幼稚园园长
 @namespace https://greasyfork.org/users/959347
@@ -114,11 +114,11 @@ Rewritten_script_code
     color: #888;
 }
 
-    .copilot-chat-textareacopilot-chat-textarea
+.copilot-chat-textarea textarea,
 .message-container span {
     color: #000;
 }
-.copilot-chat-textarea textarea,
+
 #copilot-chat-panel-inner code {
     color: #9932cb;
 }
