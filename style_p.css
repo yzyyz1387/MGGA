@@ -107,7 +107,18 @@ Rewritten_script_code
     .blob-code-inner {
         font-family: 'jb', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
     }
-    .header-search-wrapper {
-        color: #888;
-    }
+.header-search-wrapper,
+.message-container div,
+#copilot-chat-panel-inner.s-snippet-clipboard-copy-unpositioned div,
+#copilot-chat-panel-inner.s-snippet-clipboard-copy-unpositioned p {
+    color: #888;
+}
+
+.message-container span {
+    color: #000;
+}
+
+#copilot-chat-panel-inner code {
+    color: #9932cb;
+}
 }
